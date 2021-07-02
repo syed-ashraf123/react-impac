@@ -21,7 +21,12 @@ function ReactNavbar() {
   return (
     <Row>
       <Col className="p-0 m-0">
-        <Navbar bg="light" expand="lg" style={{ minHeight: 80 }}>
+        <Navbar
+          collapseOnSelect
+          bg="light"
+          expand="lg"
+          style={{ minHeight: 80 }}
+        >
           <Navbar.Brand>
             <i>
               &nbsp; <b style={{ fontSize: 30 }}>Impac Lift</b>
@@ -30,18 +35,46 @@ function ReactNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link as={Link} to="/" className={classes.link}>
-                Home
-              </Nav.Link>
-              <Nav.Link as={Link} to="/cabins" className={classes.link}>
-                Cabins
-              </Nav.Link>
-              <Nav.Link as={Link} to="/doors" className={classes.link}>
-                Doors
-              </Nav.Link>
-              <Nav.Link as={Link} to="/aboutus" className={classes.link}>
-                Aboutus
-              </Nav.Link>
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="1"
+                  as={Link}
+                  to="/"
+                  className={classes.link}
+                >
+                  Home
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="2"
+                  as={Link}
+                  to="/cabins"
+                  className={classes.link}
+                >
+                  Cabins
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="3"
+                  as={Link}
+                  to="/doors"
+                  className={classes.link}
+                >
+                  Doors
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="4"
+                  as={Link}
+                  to="/aboutus"
+                  className={classes.link}
+                >
+                  Aboutus
+                </Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
