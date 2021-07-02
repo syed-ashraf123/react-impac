@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Row, Col } from "react-bootstrap";
 import { makeStyles } from "@material-ui/core/styles";
-
 function ReactNavbar() {
   const useStyles = makeStyles({
     link: {
@@ -41,7 +40,7 @@ function ReactNavbar() {
               </Nav.Link>
               <Nav.Link href="/aboutus" className={classes.link}>
                 Aboutus
-              </Nav.Link>{" "}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
