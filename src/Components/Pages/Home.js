@@ -5,6 +5,7 @@ import { Typography } from "@material-ui/core/";
 import Offers from "../Offers";
 import Products from "../Products";
 function Home() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Row>

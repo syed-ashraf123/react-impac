@@ -3,6 +3,7 @@ import { Row, Col, Jumbotron, Image } from "react-bootstrap";
 import { Container, Typography } from "@material-ui/core";
 import Logo from "../../Images/LOGO.jpg";
 function Aboutus() {
+  window.scrollTo(0, 0);
   return (
     <Row>
       <Col>

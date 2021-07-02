@@ -2,7 +2,24 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { Row, Col } from "react-bootstrap";
 import { Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
 const Footer = () => {
+  const useStyles = makeStyles({
+    link: {
+      margin: 10,
+      fontSize: 30,
+      textDecoration: "none !important",
+      color: "black",
+      "&:hover": {
+        color: "gray",
+        textDecoration: "none",
+        cursor: "pointer",
+      },
+    },
+  });
+
+  const classes = useStyles();
   return (
     <Row>
       <Col style={{ backgroundColor: "#2196f3" }}>
@@ -42,20 +59,40 @@ const Footer = () => {
                 </Typography>
               </MDBCol>
               <MDBCol md="6">
-                <h5 className="title">Links</h5>
                 <ul>
-                  <li className="list-unstyled">
-                    <a href="#!">Link 1</a>
+                  <li>
+                    <h5 className="title">Links</h5>
                   </li>
+                  <br />
+                  <br />
                   <li className="list-unstyled">
-                    <a href="#!">Link 2</a>
+                    <Link to="/" className={classes.link}>
+                      Home
+                    </Link>
                   </li>
+                  <br />
+                  <br />
                   <li className="list-unstyled">
-                    <a href="#!">Link 3</a>
+                    <Link to="/doors" className={classes.link}>
+                      Doors
+                    </Link>
                   </li>
+                  <br />
+                  <br />
                   <li className="list-unstyled">
-                    <a href="#!">Link 4</a>
+                    <Link to="/cabins" className={classes.link}>
+                      Cabins
+                    </Link>
                   </li>
+                  <br />
+                  <br />
+                  <li className="list-unstyled">
+                    <Link to="/aboutus" className={classes.link}>
+                      Aboutus
+                    </Link>
+                  </li>
+                  <br />
+                  <br />
                 </ul>
               </MDBCol>
             </MDBRow>
@@ -65,8 +102,7 @@ const Footer = () => {
             style={{ backgroundColor: "#1a78c2" }}
           >
             <MDBContainer fluid>
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
+              &copy; {new Date().getFullYear()} Copyright: Syed
             </MDBContainer>
           </div>
         </MDBFooter>

@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import { Typography } from "@material-ui/core";
 
 function Cabin() {
+  window.scrollTo(0, 0);
   const cache = {};
 
   function importAll(r) {
