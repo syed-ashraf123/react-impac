@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, Nav, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 function ReactNavbar() {
@@ -30,19 +29,19 @@ function ReactNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Link to="/" className={classes.link}>
+            <Nav className="mr-auto">
+              <Nav.Link href="/" className={classes.link}>
                 Home
-              </Link>
-              <Link to="/cabins" className={classes.link}>
+              </Nav.Link>
+              <Nav.Link href="/cabins" className={classes.link}>
                 Cabins
-              </Link>
-              <Link to="/doors" className={classes.link}>
+              </Nav.Link>
+              <Nav.Link href="/doors" className={classes.link}>
                 Doors
-              </Link>
-              <Link to="/aboutus" className={classes.link}>
+              </Nav.Link>
+              <Nav.Link href="/aboutus" className={classes.link}>
                 Aboutus
-              </Link>
+              </Nav.Link>{" "}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
