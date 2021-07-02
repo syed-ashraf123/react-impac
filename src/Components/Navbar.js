@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Row, Col } from "react-bootstrap";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 function ReactNavbar() {
   const useStyles = makeStyles({
     link: {
@@ -29,16 +30,16 @@ function ReactNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/" className={classes.link}>
+              <Nav.Link as={Link} to="/" className={classes.link}>
                 Home
               </Nav.Link>
-              <Nav.Link href="/cabins" className={classes.link}>
+              <Nav.Link as={Link} to="/cabins" className={classes.link}>
                 Cabins
               </Nav.Link>
-              <Nav.Link href="/doors" className={classes.link}>
+              <Nav.Link as={Link} to="/doors" className={classes.link}>
                 Doors
               </Nav.Link>
-              <Nav.Link href="/aboutus" className={classes.link}>
+              <Nav.Link as={Link} to="/aboutus" className={classes.link}>
                 Aboutus
               </Nav.Link>
             </Nav>
