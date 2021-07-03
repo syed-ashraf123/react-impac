@@ -19,7 +19,7 @@ function Cabin() {
   return (
     <Row className="my-5">
       <center>
-        <Typography variant="h2"> Type of Doors </Typography>
+        <Typography variant="h2"> Type of Cabins </Typography>
       </center>
       {images.map((image) => (
         <Col
