@@ -38,7 +38,7 @@ const Footer = () => {
                   <br />
                   Lucknow-226022, Uttar Pradesh
                   <br />
-                  <b> +91 9889435997, +91-8112303218, +91-7860324614</b>
+                  <b> +91 9889435997, +91-7860324614</b>
                 </Typography>
 
                 <Typography variant="h5"> Branch Office</Typography>
@@ -55,7 +55,7 @@ const Footer = () => {
                   <br />
                   Bareilly-243003, Uttar Pradesh
                   <br />
-                  <b>+91 9889435997, +91-8112303218, +91-7860324614</b>
+                  <b>+91 9889435997, +91-7860324614</b>
                 </Typography>
               </MDBCol>
               <MDBCol md="6">
