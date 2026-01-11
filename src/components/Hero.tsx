@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-elevator.jpg";
 
 const stats = [
   { icon: Shield, value: "ISO 9001:2015", label: "Certified" },
-  { icon: Award, value: "500+", label: "Installations" },
+  { icon: Award, value: "1000+", label: "Installations" },
   { icon: Clock, value: "24/7", label: "Support" },
 ];
 

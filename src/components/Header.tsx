@@ -45,18 +45,11 @@ export const Header = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <div className="flex flex-col">
-                <span className={`text-2xl font-bold font-display tracking-tight transition-colors ${
-                  isScrolled ? "text-primary" : "text-primary-foreground"
-                }`}>
-                  IMPAC
-                </span>
-                <span className={`text-xs tracking-[0.3em] uppercase transition-colors ${
-                  isScrolled ? "text-accent" : "text-accent"
-                }`}>
-                  LIFT
-                </span>
-              </div>
+              <img 
+                src="/LOGO2.jpg" 
+                alt="IMPAC LIFT Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </motion.a>
 
             {/* Desktop Navigation */}
