@@ -12,16 +12,8 @@ window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
 pintrk('load', '2613124713779', {em: '<user_email_address>'});
 pintrk('page');
 </script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt=""
-  src="https://ct.pinterest.com/v3/?event=init&tid=2613124713779&pd[em]=<hashed_email_address>&noscript=1" />
-</noscript>
 <!-- end Pinterest Tag -->
-    <script>
-pintrk('track', 'pagevisit', {
-event_id: 'eventId0001'
-});
-</script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -109,5 +101,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+        <script>
+pintrk('track', 'pagevisit', {
+event_id: 'eventId0001'
+});
+</script>
   </body>
 </html>
